@@ -1,0 +1,441 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* 
+fonts ---
+font-family: 'Barlow', sans-serif;
+
+font-family: 'Cardo', serif; */
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+  /* Header section */
+header {
+    background-image: url(./Assets/header-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.logo {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-style: normal;
+    color: white;
+    position: absolute;
+}
+.logo-pad {
+    padding: 35px;
+}
+nav {
+    padding: 35px 0;
+    left: calc(20% - 10px)
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+a {
+    padding: 0px 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400px;
+    font-size: 2.2rem;
+}
+a:hover {
+    border-bottom: 2px solid #FFB100;
+    padding: 0px;
+    margin: 0px 15px;
+}
+.layer-col h1 {
+    font-family: 'Cardo', serif;
+    font-size: 8.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: whitesmoke;
+    padding: 50px 0 0;
+    margin-bottom: calc(10% - 90px);
+}
+.button1 {
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    border: 2px solid #FFB100;
+    text-align: center;
+    padding: 15px;
+    width: 11vw;
+}
+.button1:hover {
+    background:whitesmoke;
+    color: #1f0a03;
+}
+
+  /* Main section */
+/* Model section */
+.model-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.text-container {
+    width: 35vw;
+    height: 70vh;
+}
+.model-container img {
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    height: 75vh;
+    box-shadow: 35px 40px 5px rgba(73, 66, 37, 0.2);
+}
+h2 {
+    font-family: 'Cardo', serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #491400;
+    text-transform: uppercase;
+}
+section p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #1f0a03;
+    line-height: 1.5;
+}
+.button2 {
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    color: #232221;
+    border: 2px solid #FFB100;
+    text-align: center;
+    padding: 15px;
+    width: 11vw;
+}
+.button2:hover {
+    background: #1f0a03;
+    color: whitesmoke;
+}
+
+/* Ring section */
+.ring-container {
+    background-image: url(./Assets/banner-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.ring-container div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.rings h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400px;
+    font-size: 2rem;
+    align-items: center;
+    color: white;
+    text-decoration: underline 3px #FFB100;
+}
+.rings h4 {
+    color: whitesmoke;
+    font-family: 'Cardo', serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.rings p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    line-height: 1.5;
+    width: 50vw;
+    padding-bottom: 30px;
+}
+.ring-container .button1 {
+    align-items: center;
+}
+
+.rings .button1 {
+    width: 12vw;
+    margin: 0 auto;
+} 
+
+
+/* Merch section */
+.gallery {
+    height: 70vh;
+    /* width: 100%; */
+
+}
+.merch {
+    display: flex;
+    justify-content: space-between;
+}
+.gallery h2 {
+    text-align: center;
+}
+.photo-sec {
+    width: calc(100vw - 40px / 4);
+    height: calc(100vw - 40px / 4);
+    /* max-width: 320px; */
+    max-height: 320px;
+    position: relative;
+}
+
+.photo-sec img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.gallery h3 p {
+    background: #491400;
+    position: absolute;
+}
+
+.gallery h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Barlow', sans-serif;
+    width: 13.5vw;
+    padding: 25px;
+    line-height: 1.2;
+    text-align: left;
+    background: #491400;
+    position: absolute;
+    margin: -60px auto;
+}
+.photo-sec span {
+    color: #FFB100;
+    display: block;
+}
+
+/* Footer section */
+.contact-container {
+    background: #1f0a03;
+    padding: 10px 0;
+    height: 70vh;
+}
+
+footer h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+form input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input {
+    background: transparent;
+    width: 50vw;
+    padding: 15px;
+    margin: 5px;
+    color: #FFB100;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.form-msg {
+    height: 30vh;
+    margin: 0 auto;
+}
+
+.submit {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    background: #1f0a03;
+    border: 2px solid #FFB100;
+    padding: 15px;
+}
+.submit:hover {
+    background:whitesmoke;
+    color: #1f0a03;
+}
+.bottom-banner .logo {
+    background: #232221;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Different screen size */
+
+@media (max-width: 940px) {
+    /* .image-col img {
+      position: static;
+    }
+  } */
+  
+  /* Landscape phone to portrait tablet */
+  @media (max-width: 768px) {
+    
+    /* header */
+    header {
+        width: auto;
+        height: 100%;
+    }
+    header a {
+        display: none;
+    }
+    h1 .button1 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .layer-col h1 { 
+        font-size: 5rem;
+        text-align: center;
+    }
+    .button1 {
+        font-size: 2rem;
+        padding: 15px;
+        width: 33vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* model */
+    .model-container {
+        height: 100%;
+    }
+    .text-container {
+        width: auto;
+        height: 140vh;
+        text-align: center;
+    }
+    .model-container img {
+        top: 10%;
+        left: 10%;
+        height: 55vh;
+        box-shadow: 10px 10px 5px rgba(73, 66, 37, 0.2);
+    }
+    .text-container h2 {
+        padding-top: 70vh;
+    }
+    .button2 {
+        font-size: 2rem;
+        padding: 15px;
+        width: 33vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .text-container p {
+        text-align: left;
+    }
+
+    /* rings  */
+    .ring-container {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    h4 {
+        margin: 0 auto;
+
+    }
+    .rings .button1 {
+        padding: 15px;
+        width: 40vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+
+
+    /* gallery  */
+    .gallery {
+        height: 100%;
+    }
+    .photo-sec h3 {
+      top: auto;
+      bottom: 0;
+      width: 5vw;
+      padding: 25px;
+      line-height: 1.2;
+      text-align: left;
+      margin: 60px auto;
+    }
+    .merch {
+      flex-flow: column;
+      align-items: center;
+      min-height: 100%;
+    }
+    /* .merch .photo-sec {
+      width: 90vw;
+      /* height: 90vw; */
+      /* margin: 10px;
+    } */ */
+
+    /* footer  */
+    .contact-container {
+        height: 100%;
+    }
+    .bottom-banner {
+        height: 100%;
+    }
+
+
+
+
+
+  }
+  
+  /* Landscape phones and down */
+  /* @media (max-width: 480px) {
+    nav {
+      display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .merch {
+      flex-direction: column;
+      align-items: center;
+    }
+    .merch.photo-sec {
+      width: 90vw;
+      height: 90vw;
+      margin: 10px;
+    } 
+  } */
